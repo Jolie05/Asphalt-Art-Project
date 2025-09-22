@@ -15,7 +15,7 @@ public class CrustDonut extends PainterPlus{
   
   //paints the diagonal parts of the dough/crust
   public void diagonalCrust(String color){
-    setPaint(2);
+    setPaint(2); //amount of squares to be painted
     while (hasPaint()) {
       paint(color);
       move();
@@ -30,7 +30,7 @@ public class CrustDonut extends PainterPlus{
 
   //painting the inside crust
   public void insideCrust(String color){
-    turnRight();
+    turnRight(); //setting it up
     setPaint(8);
     while(hasPaint()) {
       paint(color);

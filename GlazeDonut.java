@@ -47,7 +47,7 @@ public class GlazeDonut extends PainterPlus{
   //this is layer 4, or just the last parts of the glaze
   public void L4(){
     setPaint(4);
-    while (hasPaint()){
+    while (hasPaint()){ //moving around the inside part of the donut
       paint("pink");
       move();
       turnRight();
@@ -70,6 +70,7 @@ public class GlazeDonut extends PainterPlus{
     move();
   }
 
+//this paints a diagonal line of "glaze"
   public void diagonalGlaze(String color){
     while (hasPaint()) {
       paint(color);

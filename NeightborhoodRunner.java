@@ -3,7 +3,10 @@ import org.code.neighborhood.*;
 public class NeighborhoodRunner {
   public static void main(String[] args) {
 
-    //background painter
+    /*
+    paints all of the background painter
+    also known as the backgorund painter
+    */
     BackgroundPainter k = new BackgroundPainter();
     k.setPaint(1000);
     k.paintBackground("DodgerBlue");
@@ -29,7 +32,12 @@ public class NeighborhoodRunner {
     a.turnRight();
     a.moveFast();
 
-    //the glaze, layer 1 (the glaze closest to the outer crust)
+    /*
+    painting the glaze of the donut
+    painter of this part will be called GlazeDonut
+    calling this the 1st layer or layer 1 pr L1
+    its for the glaze on the outside closest to the outside
+    */
     GlazeDonut r = new GlazeDonut();
     r.setupGlaze("DodgerBlue");
     r.L1();
